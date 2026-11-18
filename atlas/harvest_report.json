@@ -1,0 +1,114 @@
+{
+  "author": "David Tom Foss",
+  "license": "polyform-noncommercial-1.0.0",
+  "donor": "DeepSeek-V4.1-Flash-1017",
+  "donor_total_bytes": 510286023000,
+  "donor_total_tensors": 96085,
+  "elapsed_sec": 161.98,
+  "bytes_pread_gb": 8.049,
+  "tensors_pread_count": 1596,
+  "peak_rss_mb": 3395.16,
+  "grad_enabled": false,
+  "bridges": {
+    "direct_bpe_matches": 3078,
+    "subword_matches": 946,
+    "utf32_105_palette_bytes": 420,
+    "engram_compressed_vocab_size": 99092,
+    "anchor_count": 256
+  },
+  "organs_harvested": {
+    "O1_dspark_markov_and_confidence": {
+      "markov_shape": [
+        129280,
+        256
+      ],
+      "symbol_106x106_rms": 7.4702,
+      "confidence_rec720_l2": 1.8911
+    },
+    "O2_birkhoff_hyperconnections": {
+      "layers_scanned": 43,
+      "sinkhorn_matrices_b4": 86,
+      "all_in_conv_o2_contraction": true,
+      "timelike_rotating_matrices": 21,
+      "max_doubly_stochastic_err": 0.05106269
+    },
+    "O3_shared_experts_43": {
+      "shared_experts_scanned": 43,
+      "mean_r2_crystallization": 0.8685,
+      "noether_parity_max_err": 0.0001220703125
+    },
+    "O4_routed_moe_15744": {
+      "router_gates_indexed": 15744,
+      "router_table_bytes": 535296,
+      "domain_champions_fp4_streamed": 159,
+      "domain_expert_counts": {
+        "code_struct": 2721,
+        "math_logic": 1016,
+        "en_prose": 2801,
+        "vision_vl": 1555,
+        "world_fact": 166,
+        "causal_action": 3215,
+        "de_prose": 3886,
+        "dspark_draft": 384
+      },
+      "mean_reshimu_specialist_residual_ratio": 0.9897
+    },
+    "O5_mla_compressors_indexers_sinks": {
+      "kv_compressors": 4,
+      "sparse_indexers": 8,
+      "attention_sinks": 43
+    },
+    "O6_engram_202gb_de_en": {
+      "tables_probed": [
+        "layers.1.engram (384,006,168x256)",
+        "layers.14.engram (384,016,682x256)"
+      ],
+      "de_en_ngram_positions_hashed": 8192,
+      "exact_rows_pread_per_table": 12288
+    },
+    "O7_vision_vit32_and_aligner": {
+      "vit_blocks_sampled": [
+        0,
+        8,
+        16,
+        24,
+        31
+      ],
+      "patch588_to_240_shape": [
+        588,
+        240
+      ],
+      "sight_crystals_64x240_rms": 0.05758,
+      "inv_16d_untouched": true
+    }
+  },
+  "wirkung_kronecker_organ_pixels": {
+    "canonical_8x8_pixels": 128,
+    "pixel_dictionary_bytes": 8192,
+    "rot_map_bytes_per_organ": 2880,
+    "total_sram_bytes_utf32_plus_pixels_plus_active_map": 11492,
+    "fits_single_64kib_aie2_tile": true,
+    "mean_bit_agreement_after_128pixel_vshift": 0.865,
+    "per_organ_bit_agreement": {
+      "moe_reshimu_de_prose": 0.868,
+      "moe_reshimu_en_prose": 0.858,
+      "moe_reshimu_math_logic": 0.8576,
+      "moe_reshimu_code_struct": 0.8445,
+      "moe_reshimu_causal_action": 0.8873,
+      "moe_reshimu_world_fact": 0.8273,
+      "moe_reshimu_vision_vl": 0.908,
+      "moe_reshimu_dspark_draft": 0.8545,
+      "shared_43_consensus": 0.8931,
+      "dspark_markov_engram": 0.8514
+    }
+  },
+  "artifacts": {
+    "caseg2_cseg_path": "atlas/atlas.cseg",
+    "caseg2_cseg_bytes": 208457,
+    "bundle_npz_path": "atlas/deepseek_all7_wirkung_bundle.npz",
+    "bundle_npz_bytes": 3147592,
+    "compression_ratio_vs_510gb_x": 152049.6,
+    "fiedler_gap_ratio": 378135979824.4952,
+    "log8_pushsum_mass_err": 0.0
+  }
+}

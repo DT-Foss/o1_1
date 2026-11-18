@@ -1,0 +1,100 @@
+{
+  "author": "David Tom Foss",
+  "license": "polyform-noncommercial-1.0.0",
+  "step_captured": 49781,
+  "lives": 8,
+  "meals": 15,
+  "value_truth_60step": 0.731,
+  "organs_participation_table5": [
+    {
+      "name": "Schatten xy",
+      "util": 0.7417,
+      "saturated": false,
+      "quiet": 0,
+      "loud": 0.0167
+    },
+    {
+      "name": "Schatten xz",
+      "util": 0.7956,
+      "saturated": false,
+      "quiet": 0,
+      "loud": 0.0
+    },
+    {
+      "name": "Fokus",
+      "util": 0.0,
+      "saturated": false,
+      "quiet": 32,
+      "loud": 0.0
+    },
+    {
+      "name": "Z\u2082-Polarit\u00e4t",
+      "util": 0.1766,
+      "saturated": true,
+      "quiet": 1,
+      "loud": 0.1719
+    },
+    {
+      "name": "Holo-Platte",
+      "util": 0.6911,
+      "saturated": false,
+      "quiet": 2,
+      "loud": 0.0312
+    },
+    {
+      "name": "Kerr-Kavit\u00e4t",
+      "util": 0.6525,
+      "saturated": false,
+      "quiet": 0,
+      "loud": 0.0078
+    }
+  ],
+  "vision_cortex": {
+    "total_nodes": 4664,
+    "base_nodes": 64,
+    "fine_nodes": 2270,
+    "object_nodes": 2330,
+    "leaves": 1199,
+    "max_depth": 9,
+    "recon_error": 0.2721,
+    "recon_error_base": 0.7533,
+    "color_salience": 0.8114,
+    "motion": 0.0487,
+    "motion_comp": 0.0165,
+    "shift": -22,
+    "instances": 11,
+    "splits": 2098,
+    "pruned": 132,
+    "promoted": 7019,
+    "frames": 31109,
+    "ms": 4.7414,
+    "ms_last": 4.9606
+  },
+  "deepseek_organs_telemetry": {
+    "body": "o1_6p2m_deepseek_all7.safetensors",
+    "xdna_lanes": 1,
+    "active_xdna_organ": "moe_reshimu_dspark_draft",
+    "z2_organ_dims": [
+      32,
+      53,
+      51,
+      23,
+      6,
+      54,
+      2,
+      55,
+      35
+    ],
+    "vision_lift_active": true,
+    "de_lens_switches": 135
+  },
+  "learning_competence": {
+    "z": 1.0,
+    "g": 0.4496,
+    "t": 0.6114,
+    "r": 0.3089,
+    "i": 0.5573,
+    "s": 0.249,
+    "j": 0.2346
+  }
+}

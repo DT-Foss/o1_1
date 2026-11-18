@@ -44,12 +44,22 @@ Autonomous $\mathbb{Z}_2$ polarity self-routing selects its register state from 
 | Apple M4 ANE (`64k` WT2) | `o1-6.2M-deepseek-all7` `uint4` LUT (`2.78 MB`) | `6.41 µs/tok` | **`155,955.9 tok/s` (`1.97420 BPB`)** | `0` recompiles |
 | Apple M4 ANE (`64k` WT2) | `o1-8.5M-deepseek-all7` `uint4` LUT (`3.99 MB`) | `10.32 µs/tok` | **`96,878.2 tok/s` (`1.95413 BPB`)** | `0` recompiles |
 
+## Repository File Map (Matching Paper Tables 5, 6 & 7)
+
+- Checkpoints (`o1_6p2m_deepseek_all7.safetensors`, `o1_8p5m_deepseek_all7.safetensors`) hosted at https://huggingface.co/davidfoss/o1_1
+- `papers/Organism_Not_Harness_v1.0.pdf` — Full 13-page Working Draft manuscript (`v0.1`)
+- `benchmarks/standard_o1_all7_benchmark.json` — Complete 5-model gradient-free standard benchmark report (Table 6)
+- `atlas/deepseek_all7_wirkung_bundle.npz` (`3.15 MB`) — All `25` harvested DeepSeek-V4.1 organ arrays (Table 7)
+- `atlas/atlas.cseg` (`208 KB`) & `atlas/harvest_report.json` — `CASEG2` `.causal` capsule graph & harvest metrics (Section 3 & 9)
+- `telemetry/` (`self_map.json`, `organ_probe_summary.json`, `action_crystals.json`, `drive.json`, `home.json`) — Live embodied organ participation, `Value.truth()` (`r = +0.731`), and blind-spot ledger (Table 5 & Section 6)
+
 ## Cryptographic SHA-256 Digests
 
-- `Organism_Not_Harness_v1.0.pdf` (`13` pages): `5da51a9489d487278a0a40f354dec931adc8577ccefca8c8f419b1a5148b1c12`
+- `papers/Organism_Not_Harness_v1.0.pdf` (`13` pages): `d68614d3dea7d8ec1ec658d6c5666e68e470bfb62f151985fac115b6ba6496db`
 - `o1_6p2m_deepseek_all7.safetensors`: `2582a0485106934c6655577d84270d66685c97dc4b30afe2a278bf988af11590`
 - `o1_8p5m_deepseek_all7.safetensors`: `001a8ba41f1365b1f00abf9395ea6d16c9d01df8eae16d9ebd310070545d08ed`
-- `atlas.cseg` (`CASEG2` capsule graph, `208,457 B`): `8f2aa76cee32f287021cd666a4f6b28cedf42103bc2d905bc750e7914097a6d5`
+- `atlas/deepseek_all7_wirkung_bundle.npz` (Table 7): `bc6c4004d0671063595ca7c944edc2ee4be0a2c47d22a2e82ad5ae7c8a649c54`
+- `atlas/atlas.cseg` (`CASEG2` capsule graph): `8f2aa76cee32f287021cd666a4f6b28cedf42103bc2d905bc750e7914097a6d5`
 
 ## Citation
 
