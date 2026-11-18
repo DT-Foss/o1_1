@@ -1,0 +1,66 @@
+{
+  "model_type": "o1_hypercodec_organism",
+  "architecture": "O1HypercodecModel",
+  "author": "David Tom Foss",
+  "license": "polyform-noncommercial-1.0.0",
+  "vocab_size": 4096,
+  "d_model": 256,
+  "invariant_dim": 16,
+  "donor_folded": "DeepSeek-V4.1-Flash-1017 (O1-O7, zero parameter delta)",
+  "variants": {
+    "o1_6p2m_deepseek_all7.safetensors": {
+      "parameters": 6243681,
+      "n_layers": 2,
+      "carrier_state_bytes_fp32": 49664,
+      "z2_self_inner_register_dims": [
+        3,
+        4,
+        16,
+        18,
+        21,
+        22,
+        37,
+        48
+      ],
+      "z2_donor_organ_register_dims": [
+        32,
+        53,
+        51,
+        23,
+        6,
+        54,
+        2,
+        55,
+        35
+      ],
+      "sha256": "2582a0485106934c6655577d84270d66685c97dc4b30afe2a278bf988af11590"
+    },
+    "o1_8p5m_deepseek_all7.safetensors": {
+      "parameters": 8489089,
+      "n_layers": 4,
+      "carrier_state_bytes_fp32": 99328,
+      "z2_self_inner_register_dims": [
+        3,
+        4,
+        16,
+        18,
+        21,
+        22,
+        37,
+        48
+      ],
+      "z2_donor_organ_register_dims": [
+        55,
+        53,
+        20,
+        23,
+        6,
+        35,
+        51,
+        32,
+        17
+      ],
+      "sha256": "001a8ba41f1365b1f00abf9395ea6d16c9d01df8eae16d9ebd310070545d08ed"
+    }
+  }
+}

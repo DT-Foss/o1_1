@@ -1,0 +1,508 @@
+{
+  "author": "David Tom Foss",
+  "license": "polyform-noncommercial-1.0.0",
+  "timestamp": "2026-11-18T15:23:03+0100",
+  "grad_enabled": false,
+  "total_elapsed_sec": 2147.54,
+  "models": [
+    {
+      "name": "o1-6.2M-base",
+      "checkpoint": "o1_6p2m_two_layers.safetensors",
+      "parameters": 6243681,
+      "inv_16d_drift_vs_genesis": 0.0,
+      "grad_enabled": false,
+      "z2_organ_register_dims": [],
+      "embodied_mount": null,
+      "wikitext2_test": {
+        "static_fresh_full_bpb": 2.03875,
+        "static_cont_32k_bpb": 2.01609,
+        "mps_eval_tok_per_sec": 6854.6,
+        "carrier_bytes": 142848
+      },
+      "stream_en_32k": {
+        "chosen_mode": "passive",
+        "bpb": 2.01609,
+        "passive_bpb": 2.01609
+      },
+      "stream_de_32k": {
+        "chosen_mode": "passive",
+        "bpb": 5.009,
+        "passive_bpb": 5.009
+      },
+      "stream_code_mbpp_32k": {
+        "chosen_mode": "passive",
+        "bpb": 3.09719,
+        "passive_bpb": 3.09719
+      },
+      "arc_easy_full_2376": {
+        "n": 600,
+        "acc": 0.24,
+        "acc_norm": 0.2517,
+        "correct_raw": 144,
+        "correct_norm": 151,
+        "eval_sec": 31.52,
+        "tok_per_sec": 6091.4
+      },
+      "arc_challenge_full_1172": {
+        "n": 600,
+        "acc": 0.185,
+        "acc_norm": 0.2367,
+        "correct_raw": 111,
+        "correct_norm": 142,
+        "eval_sec": 36.69,
+        "tok_per_sec": 5805.4
+      },
+      "hellaswag_2000": {
+        "n": 600,
+        "acc": 0.315,
+        "acc_norm": 0.31,
+        "correct_raw": 189,
+        "correct_norm": 186,
+        "eval_sec": 34.0,
+        "tok_per_sec": 6073.7
+      },
+      "mmlu_stratified_2000": {
+        "n": 600,
+        "acc": 0.25,
+        "acc_norm": 0.265,
+        "correct_raw": 150,
+        "correct_norm": 159,
+        "eval_sec": 58.62,
+        "tok_per_sec": 6212.7
+      },
+      "probes": {
+        "Who created o1?": "o1 was created by David Tom F",
+        "Author:": "David Tom Foss (Wirkung",
+        "7 times 6 =": "42",
+        "3 phasor 4 =": "15"
+      },
+      "m4_ane_hardware": null,
+      "elapsed_sec": 301.42
+    },
+    {
+      "name": "o1-6.2M-deepseek-all7",
+      "checkpoint": "o1_6p2m_deepseek_all7.safetensors",
+      "parameters": 6243681,
+      "inv_16d_drift_vs_genesis": 0.0,
+      "grad_enabled": false,
+      "z2_organ_register_dims": [
+        32,
+        53,
+        51,
+        23,
+        6,
+        54,
+        2,
+        55,
+        35
+      ],
+      "embodied_mount": null,
+      "wikitext2_test": {
+        "static_fresh_full_bpb": 2.03955,
+        "static_cont_32k_bpb": 2.01756,
+        "mps_eval_tok_per_sec": 6703.4,
+        "carrier_bytes": 142848
+      },
+      "stream_en_32k": {
+        "chosen_mode": "passive",
+        "probe_256_bpb": {
+          "passive": 1.932,
+          "reg0_de_markov_engram": 2.0912,
+          "reg4_code_struct": 1.9372
+        },
+        "passive_bpb": 2.01756,
+        "bpb": 2.01756,
+        "gain_bpb": 0.0
+      },
+      "stream_de_32k": {
+        "chosen_mode": "reg0_de_markov_engram",
+        "probe_256_bpb": {
+          "passive": 4.1637,
+          "reg0_de_markov_engram": 3.8808,
+          "reg4_code_struct": 4.2008
+        },
+        "passive_bpb": 5.02665,
+        "bpb": 4.66468,
+        "gain_bpb": 0.36197
+      },
+      "stream_code_mbpp_32k": {
+        "chosen_mode": "reg4_code_struct",
+        "probe_256_bpb": {
+          "passive": 2.612,
+          "reg0_de_markov_engram": 2.7495,
+          "reg4_code_struct": 2.601
+        },
+        "passive_bpb": 3.10131,
+        "bpb": 3.0961,
+        "gain_bpb": 0.00522
+      },
+      "arc_easy_full_2376": {
+        "n": 600,
+        "acc": 0.24,
+        "acc_norm": 0.2483,
+        "correct_raw": 144,
+        "correct_norm": 149,
+        "eval_sec": 33.7,
+        "tok_per_sec": 5697.1
+      },
+      "arc_challenge_full_1172": {
+        "n": 600,
+        "acc": 0.1867,
+        "acc_norm": 0.2333,
+        "correct_raw": 112,
+        "correct_norm": 140,
+        "eval_sec": 36.71,
+        "tok_per_sec": 5803.3
+      },
+      "hellaswag_2000": {
+        "n": 600,
+        "acc": 0.3133,
+        "acc_norm": 0.31,
+        "correct_raw": 188,
+        "correct_norm": 186,
+        "eval_sec": 36.29,
+        "tok_per_sec": 5690.5
+      },
+      "mmlu_stratified_2000": {
+        "n": 600,
+        "acc": 0.2517,
+        "acc_norm": 0.265,
+        "correct_raw": 151,
+        "correct_norm": 159,
+        "eval_sec": 59.96,
+        "tok_per_sec": 6074.4
+      },
+      "probes": {
+        "Who created o1?": "o1 was created by David Tom F",
+        "Author:": "David Tom Foss (Wirkung",
+        "7 times 6 =": "42",
+        "3 phasor 4 =": "15"
+      },
+      "m4_ane_hardware": {
+        "wikitext2_test_uint4_bpb": 1.9742,
+        "m64_tok_per_sec_ane": 155955.9,
+        "m4_tok_per_sec_ane": 13731.3,
+        "weight_bin_bytes": 2778258,
+        "compile_ms": 0.0,
+        "load_ms": 5.03
+      },
+      "elapsed_sec": 336.03
+    },
+    {
+      "name": "o1-6.2M-deepseek-all7-living-kick-55k",
+      "checkpoint": "o1_6p2m_deepseek_all7.safetensors",
+      "parameters": 6243681,
+      "inv_16d_drift_vs_genesis": 0.0,
+      "grad_enabled": false,
+      "z2_organ_register_dims": [
+        32,
+        53,
+        51,
+        23,
+        6,
+        54,
+        2,
+        55,
+        35
+      ],
+      "embodied_mount": {
+        "live_home": {
+          "steps": 55544,
+          "lives": 8,
+          "meals": 18,
+          "x": 3.406609068119929,
+          "y": 1.1319851256799511,
+          "h": 2.7488935718910508,
+          "read_at": 50494
+        },
+        "eye_crystals_mounted": 64,
+        "inner_register_dims": [
+          3,
+          4,
+          16,
+          18,
+          21,
+          22,
+          37,
+          48
+        ],
+        "inner_register_wired_intents": [
+          "room_explore",
+          "play_game",
+          "study_manual",
+          "introspect_mirror",
+          "consolidate_sleep",
+          "watch_tv"
+        ],
+        "inner_register_counted_tokens": 3340626,
+        "inv_16d_drift": 0.0
+      },
+      "wikitext2_test": {
+        "static_fresh_full_bpb": 2.04245,
+        "static_cont_32k_bpb": 2.02043,
+        "mps_eval_tok_per_sec": 6588.2,
+        "carrier_bytes": 142848
+      },
+      "stream_en_32k": {
+        "chosen_mode": "passive",
+        "probe_256_bpb": {
+          "passive": 1.9396,
+          "reg0_de_markov_engram": 2.0988,
+          "reg4_code_struct": 1.9449
+        },
+        "passive_bpb": 2.02043,
+        "bpb": 2.02043,
+        "gain_bpb": 0.0
+      },
+      "stream_de_32k": {
+        "chosen_mode": "reg0_de_markov_engram",
+        "probe_256_bpb": {
+          "passive": 4.1357,
+          "reg0_de_markov_engram": 3.8572,
+          "reg4_code_struct": 4.1735
+        },
+        "passive_bpb": 5.02362,
+        "bpb": 4.66376,
+        "gain_bpb": 0.35986
+      },
+      "stream_code_mbpp_32k": {
+        "chosen_mode": "reg4_code_struct",
+        "probe_256_bpb": {
+          "passive": 2.6158,
+          "reg0_de_markov_engram": 2.751,
+          "reg4_code_struct": 2.6049
+        },
+        "passive_bpb": 3.10842,
+        "bpb": 3.10294,
+        "gain_bpb": 0.00548
+      },
+      "arc_easy_full_2376": {
+        "n": 600,
+        "acc": 0.2367,
+        "acc_norm": 0.245,
+        "correct_raw": 142,
+        "correct_norm": 147,
+        "eval_sec": 34.88,
+        "tok_per_sec": 5504.3
+      },
+      "arc_challenge_full_1172": {
+        "n": 600,
+        "acc": 0.1867,
+        "acc_norm": 0.2317,
+        "correct_raw": 112,
+        "correct_norm": 139,
+        "eval_sec": 39.37,
+        "tok_per_sec": 5410.3
+      },
+      "hellaswag_2000": {
+        "n": 600,
+        "acc": 0.315,
+        "acc_norm": 0.3067,
+        "correct_raw": 189,
+        "correct_norm": 184,
+        "eval_sec": 38.4,
+        "tok_per_sec": 5376.9
+      },
+      "mmlu_stratified_2000": {
+        "n": 600,
+        "acc": 0.2517,
+        "acc_norm": 0.2633,
+        "correct_raw": 151,
+        "correct_norm": 158,
+        "eval_sec": 61.36,
+        "tok_per_sec": 5935.0
+      },
+      "probes": {
+        "Who created o1?": "o1 was created by David Tom F",
+        "Author:": "David Tom Foss (Wirkung",
+        "7 times 6 =": "42",
+        "3 phasor 4 =": "15"
+      },
+      "m4_ane_hardware": null,
+      "elapsed_sec": 341.68
+    },
+    {
+      "name": "o1-8.5M-deepseek-stageA",
+      "checkpoint": "o1_8p5m_deepseek.safetensors",
+      "parameters": 8489089,
+      "inv_16d_drift_vs_genesis": 0.0,
+      "grad_enabled": false,
+      "z2_organ_register_dims": [],
+      "embodied_mount": null,
+      "wikitext2_test": {
+        "static_fresh_full_bpb": 2.07261,
+        "static_cont_32k_bpb": 2.06401,
+        "mps_eval_tok_per_sec": 3616.1,
+        "carrier_bytes": 285696
+      },
+      "stream_en_32k": {
+        "chosen_mode": "passive",
+        "bpb": 2.06401,
+        "passive_bpb": 2.06401
+      },
+      "stream_de_32k": {
+        "chosen_mode": "passive",
+        "bpb": 5.11354,
+        "passive_bpb": 5.11354
+      },
+      "stream_code_mbpp_32k": {
+        "chosen_mode": "passive",
+        "bpb": 3.07467,
+        "passive_bpb": 3.07467
+      },
+      "arc_easy_full_2376": {
+        "n": 600,
+        "acc": 0.2483,
+        "acc_norm": 0.2567,
+        "correct_raw": 149,
+        "correct_norm": 154,
+        "eval_sec": 61.62,
+        "tok_per_sec": 3115.5
+      },
+      "arc_challenge_full_1172": {
+        "n": 600,
+        "acc": 0.1783,
+        "acc_norm": 0.255,
+        "correct_raw": 107,
+        "correct_norm": 153,
+        "eval_sec": 69.45,
+        "tok_per_sec": 3067.5
+      },
+      "hellaswag_2000": {
+        "n": 600,
+        "acc": 0.31,
+        "acc_norm": 0.3117,
+        "correct_raw": 186,
+        "correct_norm": 187,
+        "eval_sec": 65.51,
+        "tok_per_sec": 3152.0
+      },
+      "mmlu_stratified_2000": {
+        "n": 600,
+        "acc": 0.2483,
+        "acc_norm": 0.2683,
+        "correct_raw": 149,
+        "correct_norm": 161,
+        "eval_sec": 108.73,
+        "tok_per_sec": 3349.7
+      },
+      "probes": {
+        "Who created o1?": "o1 was created by David Tom F",
+        "Author:": "David Tom Foss (Wirkung",
+        "7 times 6 =": "45",
+        "3 phasor 4 =": "n"
+      },
+      "m4_ane_hardware": null,
+      "elapsed_sec": 557.02
+    },
+    {
+      "name": "o1-8.5M-deepseek-all7",
+      "checkpoint": "o1_8p5m_deepseek_all7.safetensors",
+      "parameters": 8489089,
+      "inv_16d_drift_vs_genesis": 0.0,
+      "grad_enabled": false,
+      "z2_organ_register_dims": [
+        55,
+        53,
+        20,
+        23,
+        6,
+        35,
+        51,
+        32,
+        17
+      ],
+      "embodied_mount": null,
+      "wikitext2_test": {
+        "static_fresh_full_bpb": 2.07259,
+        "static_cont_32k_bpb": 2.06589,
+        "mps_eval_tok_per_sec": 3562.4,
+        "carrier_bytes": 285696
+      },
+      "stream_en_32k": {
+        "chosen_mode": "passive",
+        "probe_256_bpb": {
+          "passive": 1.9144,
+          "reg0_de_markov_engram": 2.0706,
+          "reg4_code_struct": 1.9203
+        },
+        "passive_bpb": 2.06589,
+        "bpb": 2.06589,
+        "gain_bpb": 0.0
+      },
+      "stream_de_32k": {
+        "chosen_mode": "reg0_de_markov_engram",
+        "probe_256_bpb": {
+          "passive": 4.1588,
+          "reg0_de_markov_engram": 3.8698,
+          "reg4_code_struct": 4.1877
+        },
+        "passive_bpb": 5.13312,
+        "bpb": 4.76085,
+        "gain_bpb": 0.37227
+      },
+      "stream_code_mbpp_32k": {
+        "chosen_mode": "reg4_code_struct",
+        "probe_256_bpb": {
+          "passive": 2.5909,
+          "reg0_de_markov_engram": 2.7504,
+          "reg4_code_struct": 2.5854
+        },
+        "passive_bpb": 3.07793,
+        "bpb": 3.07746,
+        "gain_bpb": 0.00046
+      },
+      "arc_easy_full_2376": {
+        "n": 600,
+        "acc": 0.2467,
+        "acc_norm": 0.255,
+        "correct_raw": 148,
+        "correct_norm": 153,
+        "eval_sec": 60.23,
+        "tok_per_sec": 3187.5
+      },
+      "arc_challenge_full_1172": {
+        "n": 600,
+        "acc": 0.1767,
+        "acc_norm": 0.25,
+        "correct_raw": 106,
+        "correct_norm": 150,
+        "eval_sec": 67.75,
+        "tok_per_sec": 3144.4
+      },
+      "hellaswag_2000": {
+        "n": 600,
+        "acc": 0.3083,
+        "acc_norm": 0.295,
+        "correct_raw": 185,
+        "correct_norm": 177,
+        "eval_sec": 64.73,
+        "tok_per_sec": 3189.9
+      },
+      "mmlu_stratified_2000": {
+        "n": 600,
+        "acc": 0.25,
+        "acc_norm": 0.265,
+        "correct_raw": 150,
+        "correct_norm": 159,
+        "eval_sec": 110.78,
+        "tok_per_sec": 3287.5
+      },
+      "probes": {
+        "Who created o1?": "o1 was created by David Tom F",
+        "Author:": "David Tom Foss (Wirkung",
+        "7 times 6 =": "45",
+        "3 phasor 4 =": "15"
+      },
+      "m4_ane_hardware": {
+        "wikitext2_test_uint4_bpb": 1.95413,
+        "m64_tok_per_sec_ane": 96878.2,
+        "m4_tok_per_sec_ane": 9237.4,
+        "weight_bin_bytes": 3985474,
+        "compile_ms": 0.0,
+        "load_ms": 8.86
+      },
+      "elapsed_sec": 609.3
+    }
+  ]
+}
